@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal-Delta</title>
+    <style>
+        /* This ensures the slider fits the Notion window perfectly */
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; background-color: #ffffff; font-family: sans-serif; }
+        
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 100%; /* Allows it to fill the Notion block */
+            line-height: 0; /* Removes weird gaps below images */
+        }
+
+        /* The Background Image (Right side / After) */
+        .img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+     
+        
+        .img img {
+            height: 100%;
+            display: block;
+            /* Important: This keeps the image aspect ratio correct while cropping */
+            object-fit: cover; 
+            object-position: left; 
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 1. The image -->
+    <!-- CHANGE THE FILENAME BELOW IF YOUR FILE IS NOT NAMED after.jpg -->
+    <img src="CalDelta_BarType.jpg" class="img" id="Img">
+</div>
+
+</body>
+</html>
